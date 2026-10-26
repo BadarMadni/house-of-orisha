@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"ls -la /Users/apple/Desktop/Orisha/house-of-orisha/.git 2>&1\",\"timeout\":5000,\"description\":\"Check if previous git init finally completed\"}",
+  "error": "Exit code 1\nls: /Users/apple/Desktop/Orisha/house-of-orisha/.git: No such file or directory",
+  "timestamp": "2026-10-26T18:33:05.873Z",
+  "retry_count": 1
+}
