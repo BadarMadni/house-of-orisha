@@ -11,23 +11,23 @@ const films = [
     title: "SÀNGÓ: The Thunder-King Chronicles",
     description:
       "An epic historical fantasy screenplay inspired by the extraordinary life, history, and mythology of one of Africa's most legendary figures. Selected and awarded at international film festivals.",
-    poster: "/images/books/sango-poster-awards.png",
-    video: "/videos/thunder-king-clip.mp4",
+    poster: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/books/sango-poster-awards.png",
+    video: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/videos/thunder-king-clip.mp4",
     awards: [
       {
         name: "World Class Film Awards",
         achievement: "Winner — Best Feature Screenplay",
-        image: "/images/awards/world-class-film-laurel.jpg",
+        image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/awards/world-class-film-laurel.jpg",
       },
       {
         name: "Rohip International Film Festival",
         achievement: "Winner — Best Feature Script / Screenplay",
-        image: "/images/awards/rohip-sango-certificate.png",
+        image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/awards/rohip-sango-certificate.png",
       },
       {
         name: "Indie Gathering International Film Festival",
         achievement: "Semi-Finalist",
-        image: "/images/awards/indie-gathering-certificate.png",
+        image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/awards/indie-gathering-certificate.png",
       },
     ],
   },
@@ -35,8 +35,8 @@ const films = [
     title: "Blood Money",
     description:
       "A gripping corporate crime thriller adapted from the bestselling novel. One family. Two worlds. A secret worth billions.",
-    poster: "/images/books/blood-money.png",
-    video: "/videos/blood-money-clip.mp4",
+    poster: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/books/blood-money.png",
+    video: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/videos/blood-money-clip.mp4",
     awards: [],
   },
 ]
@@ -47,7 +47,7 @@ export default function FilmsPage() {
       <PageHero
         title="The Screen"
         subtitle="Film & Television"
-        image="/images/scenes/village-burning.png"
+        image="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/scenes/village-burning.png"
       />
 
       <section className="bg-obsidian py-24">

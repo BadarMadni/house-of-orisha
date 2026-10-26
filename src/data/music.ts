@@ -1,3 +1,5 @@
+import { R2_BASE } from "@/lib/constants"
+
 export interface Track {
   slug: string
   title: string
@@ -25,7 +27,7 @@ export const tracks: Track[] = [
     title: "House of Orisha (Ilé Orisha)",
     category: "Book Series Music",
     relatedProject: "House of Orisha — Book Series",
-    audioSrc: "/music/house-of-orisha.mp3",
+    audioSrc: `${R2_BASE}/music/house-of-orisha.mp3`,
   },
   {
     slug: "iwo-ni-mo-fe",
@@ -38,14 +40,14 @@ export const tracks: Track[] = [
     title: "The Call of Thunder King",
     category: "Book / Story-Inspired Music",
     relatedProject: "SÀNGÓ: The Thunder-King Chronicles",
-    audioSrc: "/music/call-of-thunder-king.mp3",
+    audioSrc: `${R2_BASE}/music/call-of-thunder-king.mp3`,
   },
   {
     slug: "we-still-remember-you",
     title: "We Still Remember You",
     category: "Book / Story-Inspired Music",
     relatedProject: "The God of Iron and the Wind Queen",
-    audioSrc: "/music/we-still-remember-you.mp3",
+    audioSrc: `${R2_BASE}/music/we-still-remember-you.mp3`,
   },
   {
     slug: "where-fire-still-calls",

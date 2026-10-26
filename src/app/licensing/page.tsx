@@ -43,7 +43,7 @@ export default function LicensingPage() {
       <PageHero
         title="Partnerships"
         subtitle="Licensing & Collaborations"
-        image="/images/scenes/village-celebration.png"
+        image="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/scenes/village-celebration.png"
       />
 
       <section className="bg-obsidian py-24">

@@ -69,7 +69,7 @@ export function HeroSection() {
       {/* Parallax Background - NEW IMAGE */}
       <motion.div className="absolute inset-0" style={{ y: imageY, scale: imageScale }}>
         <Image
-          src="/images/characters/sango-warrior-rain.png"
+          src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/sango-warrior-rain.png"
           alt="Sàngó warrior in the rain"
           fill
           priority

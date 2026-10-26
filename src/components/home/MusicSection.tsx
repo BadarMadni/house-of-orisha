@@ -39,7 +39,7 @@ export function MusicSection() {
       {/* Immersive Background Layers */}
       <div className="absolute inset-0">
         <Image
-          src="/images/brand/bg-tribal.webp"
+          src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/brand/bg-tribal.webp"
           alt=""
           fill
           className="object-cover opacity-15"
@@ -89,7 +89,7 @@ export function MusicSection() {
                 {/* Full-width cinematic bg */}
                 <div className="relative py-16 px-8 sm:px-12 md:py-20 lg:py-24">
                   <Image
-                    src="/images/characters/griot-drummer.png"
+                    src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/griot-drummer.png"
                     alt=""
                     fill
                     className="object-cover opacity-20 transition-opacity duration-700 group-hover:opacity-30"

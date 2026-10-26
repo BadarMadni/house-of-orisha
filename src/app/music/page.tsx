@@ -31,7 +31,7 @@ export default function MusicPage() {
       <PageHero
         title="The Sound"
         subtitle="Original Music"
-        image="/images/characters/griot-drummer.png"
+        image="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/griot-drummer.png"
       />
 
       <section className="bg-obsidian py-24">

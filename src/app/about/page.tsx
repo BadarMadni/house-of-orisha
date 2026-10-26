@@ -11,7 +11,7 @@ export default function AboutPage() {
       <PageHero
         title="The Author"
         subtitle="About Oriyomi Ismail"
-        image="/images/author/houston-sunset.png"
+        image="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/author/houston-sunset.png"
       />
 
       <section className="bg-obsidian py-24">
@@ -21,7 +21,7 @@ export default function AboutPage() {
               <div className="relative mx-auto w-full max-w-sm overflow-hidden gold-glow">
                 <div className="relative aspect-[3/4]">
                   <Image
-                    src="/images/author/oriyomi-ismail.png"
+                    src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/author/oriyomi-ismail.png"
                     alt="Oriyomi Ismail"
                     fill
                     className="object-cover object-top"

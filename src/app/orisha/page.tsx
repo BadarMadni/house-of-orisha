@@ -11,7 +11,7 @@ const orishas = [
     name: "Sàngó",
     title: "The Thunder King",
     domain: "Thunder, Lightning, Justice, Kingship",
-    image: "/images/characters/sango-warrior-rain.png",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/sango-warrior-rain.png",
     description:
       "Born of lightning into the royal house of Ọ̀yọ́. A warrior prince whose power commands the storm itself. His legend would outlive an empire.",
   },
@@ -19,7 +19,7 @@ const orishas = [
     name: "Ògún",
     title: "The God of Iron",
     domain: "Iron, War, Creation, Path-Opening",
-    image: "/images/books/god-of-iron-book-1.jpg",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/books/god-of-iron-book-1.jpg",
     description:
       "Path-opener, builder, warrior of creation. He walks into wilderness and raises civilization. Iron is his language, the forge his temple.",
   },
@@ -27,7 +27,7 @@ const orishas = [
     name: "Ọya",
     title: "The Wind Queen",
     domain: "Wind, Change, Storms, Transformation",
-    image: "/images/books/god-of-iron-book-2.jpg",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/books/god-of-iron-book-2.jpg",
     description:
       "Fierce, untamed, carrying a wind that refuses to belong to anyone. She challenges the storm and carves her own path through destiny.",
   },
@@ -35,7 +35,7 @@ const orishas = [
     name: "The Diviner",
     title: "Keeper of Ifá",
     domain: "Wisdom, Prophecy, Destiny",
-    image: "/images/characters/babalawo-diviner.png",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/babalawo-diviner.png",
     description:
       "Guardian of Ifá, reader of destiny, keeper of the wisdom that holds the world in balance. He sees the patterns others cannot.",
   },
@@ -43,7 +43,7 @@ const orishas = [
     name: "Kangiba",
     title: "Walker of the Forest Roads",
     domain: "Survival, Memory, Resistance",
-    image: "/images/books/kangiba-bleeding-earth.png",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/books/kangiba-bleeding-earth.png",
     description:
       "The boy who survived Mamgadi, walked to the edge of the world, broke chains beneath the moon, and became the watcher who remembered.",
   },
@@ -55,7 +55,7 @@ export default function OrishaPage() {
       <PageHero
         title="The Chambers"
         subtitle="Worlds of the Òrìṣà"
-        image="/images/characters/sango-mountain-lightning.png"
+        image="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/sango-mountain-lightning.png"
       />
 
       <section className="bg-obsidian py-24">

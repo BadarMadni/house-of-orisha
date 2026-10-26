@@ -31,7 +31,7 @@ export function Navbar() {
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-12">
           <Link href="/" className="relative z-50 flex items-center">
             <Image
-              src="/images/brand/logo-crest.png"
+              src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/brand/logo-crest.png"
               alt="House of Orisha"
               width={80}
               height={80}
@@ -93,7 +93,7 @@ function MobileMenu({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
         >
           {/* Background Image */}
           <Image
-            src="/images/brand/mobile-nav-bg.png"
+            src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/brand/mobile-nav-bg.png"
             alt=""
             fill
             className="object-cover"

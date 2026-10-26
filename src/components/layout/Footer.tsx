@@ -15,7 +15,7 @@ export function Footer() {
           <FadeIn>
             <div className="flex items-center gap-3 mb-6">
               <Image
-                src="/images/brand/logo-crest.png"
+                src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/brand/logo-crest.png"
                 alt="House of Orisha"
                 width={48}
                 height={48}

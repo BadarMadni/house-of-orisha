@@ -24,7 +24,7 @@ export function BooksHero() {
       {/* Parallax Background */}
       <motion.div className="absolute inset-0" style={{ y: imageY, scale: imageScale }}>
         <Image
-          src="/images/characters/warrior-kneeling-ruins.png"
+          src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/warrior-kneeling-ruins.png"
           alt="A warrior kneels among ancient ruins"
           fill
           priority

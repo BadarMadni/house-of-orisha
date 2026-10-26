@@ -11,12 +11,12 @@ const awards = [
   {
     name: "World Class Film Awards",
     achievement: "Winner — Best Feature Screenplay",
-    image: "/images/awards/world-class-film-laurel.jpg",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/awards/world-class-film-laurel.jpg",
   },
   {
     name: "Rohip International Film Festival",
     achievement: "Winner — Best Feature Script / Screenplay",
-    image: "/images/awards/rohip-sango-certificate.png",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/awards/rohip-sango-certificate.png",
   },
 ]
 
@@ -26,7 +26,7 @@ export function FilmSection() {
       {/* Dark crimson tinted background */}
       <div className="absolute inset-0">
         <Image
-          src="/images/scenes/village-burning.png"
+          src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/scenes/village-burning.png"
           alt=""
           fill
           className="object-cover opacity-[0.08]"
@@ -70,12 +70,12 @@ export function FilmSection() {
             <CornerFrame className="aspect-video overflow-hidden bg-obsidian">
               <video
                 className="h-full w-full object-cover"
-                poster="/images/books/sango-poster-awards.png"
+                poster="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/books/sango-poster-awards.png"
                 controls
                 preload="metadata"
                 playsInline
               >
-                <source src="/videos/thunder-king-clip.mp4" type="video/mp4" />
+                <source src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/videos/thunder-king-clip.mp4" type="video/mp4" />
               </video>
             </CornerFrame>
             <div className="mt-4 flex items-center gap-3 justify-center">

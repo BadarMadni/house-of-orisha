@@ -13,28 +13,28 @@ const orishaWorlds = [
   {
     name: "Sàngó",
     title: "The Thunder King",
-    image: "/images/characters/sango-warrior-rain.png",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/sango-warrior-rain.png",
     description: "God of Thunder, Lightning, and Justice",
     number: "I",
   },
   {
     name: "Ògún",
     title: "The God of Iron",
-    image: "/images/books/god-of-iron-book-1.jpg",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/books/god-of-iron-book-1.jpg",
     description: "Path-Opener, Builder, Warrior of Creation",
     number: "II",
   },
   {
     name: "Ọya",
     title: "The Wind Queen",
-    image: "/images/books/god-of-iron-book-2.jpg",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/books/god-of-iron-book-2.jpg",
     description: "Goddess of Wind, Change, and Transformation",
     number: "III",
   },
   {
     name: "The Diviner",
     title: "Keeper of Wisdom",
-    image: "/images/characters/babalawo-diviner.png",
+    image: "https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/babalawo-diviner.png",
     description: "Guardian of Ifá, Reader of Destiny",
     number: "IV",
   },
@@ -54,7 +54,7 @@ export function FeaturedWorlds() {
       {/* Tribal Background with Parallax */}
       <motion.div className="absolute -inset-[30%]" style={{ y: bgY, scale: bgScale }}>
         <Image
-          src="/images/brand/bg-tribal.webp"
+          src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/brand/bg-tribal.webp"
           alt=""
           fill
           className="object-cover opacity-60"

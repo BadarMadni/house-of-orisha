@@ -5,6 +5,12 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   images: {
     qualities: [75, 90],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev",
+      },
+    ],
   },
   turbopack: {
     rules: {

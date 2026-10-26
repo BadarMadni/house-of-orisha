@@ -11,7 +11,7 @@ export function NewsletterSection() {
       {/* Warm dark gold-tinted bg */}
       <div className="absolute inset-0">
         <Image
-          src="/images/scenes/sacred-river.png"
+          src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/scenes/sacred-river.png"
           alt=""
           fill
           className="object-cover opacity-10"

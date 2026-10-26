@@ -25,7 +25,7 @@ export function BooksGrid() {
       {/* Parallax tribal bg */}
       <motion.div className="absolute -inset-[20%]" style={{ y: bgY }}>
         <Image
-          src="/images/brand/bg-tribal.webp"
+          src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/brand/bg-tribal.webp"
           alt=""
           fill
           className="object-cover opacity-10"

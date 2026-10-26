@@ -21,7 +21,7 @@ export default function ContactPage() {
       <PageHero
         title="Contact"
         subtitle="Get in Touch"
-        image="/images/characters/yoruba-chiefs.png"
+        image="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/yoruba-chiefs.png"
       />
 
       <section className="bg-obsidian py-24">
