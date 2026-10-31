@@ -27,6 +27,9 @@ export async function POST(req: NextRequest) {
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 587,
       secure: false,
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 10000,
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
@@ -118,7 +121,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true })
   } catch (error) {
-    console.error("Contact form error:", error)
-    return NextResponse.json({ error: "Failed to send message. Please try again." }, { status: 500 })
+    const errMsg = error instanceof Error ? error.message : "Unknown error"
+    console.error("Contact form error:", errMsg)
+    return NextResponse.json({ error: "Failed to send message. Please try again.", debug: errMsg }, { status: 500 })
   }
 }
