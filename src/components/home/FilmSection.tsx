@@ -22,7 +22,7 @@ const awards = [
 
 export function FilmSection() {
   return (
-    <section className="relative overflow-hidden py-20 bg-[#110A0A]">
+    <section className="relative overflow-hidden py-20 bg-[#110A0A]/80">
       {/* Dark crimson tinted background */}
       <div className="absolute inset-0">
         <Image
@@ -39,7 +39,7 @@ export function FilmSection() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
         {/* Section Header */}
         <div className="mb-24 text-center">
-          <FadeIn direction="left">
+          <FadeIn direction="up">
             <div className="mx-auto mb-8 flex items-center justify-center gap-3">
               <div className="h-px w-12 bg-gradient-to-r from-transparent to-crimson/30" />
               <div className="h-2 w-2 rotate-45 border border-gold/40" />
@@ -56,7 +56,7 @@ export function FilmSection() {
               Film & <span className="text-shimmer">Television</span>
             </h2>
           </RevealText>
-          <FadeIn delay={0.3} direction="left">
+          <FadeIn delay={0.3} direction="up">
             <p className="mt-6 mx-auto max-w-lg text-sm text-bone/50 leading-relaxed">
               Award-winning screenwriting bringing Yoruba mythology to the screen.
             </p>
@@ -66,7 +66,7 @@ export function FilmSection() {
 
         {/* Main Content */}
         <div className="grid items-center gap-16 lg:grid-cols-2">
-          <FadeIn direction="left">
+          <FadeIn direction="up">
             <CornerFrame className="aspect-video overflow-hidden bg-obsidian">
               <video
                 className="h-full w-full object-cover"
@@ -85,7 +85,7 @@ export function FilmSection() {
             </div>
           </FadeIn>
 
-          <FadeIn direction="right">
+          <FadeIn direction="up">
             <div className="space-y-6">
               <div>
                 <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] uppercase text-gold/60">

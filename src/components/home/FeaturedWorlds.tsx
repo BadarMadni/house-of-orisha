@@ -50,7 +50,7 @@ export function FeaturedWorlds() {
   const bgScale = useTransform(scrollYProgress, [0, 1], [1.1, 1.25])
 
   return (
-    <section ref={sectionRef} id="worlds" className="relative py-20 overflow-hidden bg-forest-dark">
+    <section ref={sectionRef} id="worlds" className="relative py-20 overflow-hidden bg-forest-dark/80">
       {/* Tribal Background with Parallax */}
       <motion.div className="absolute -inset-[30%]" style={{ y: bgY, scale: bgScale }}>
         <Image
@@ -67,7 +67,7 @@ export function FeaturedWorlds() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
         {/* Section Header */}
         <div className="mb-12 text-center">
-          <FadeIn direction="left">
+          <FadeIn direction="up">
             <div className="mx-auto mb-8 flex items-center justify-center gap-3">
               <div className="h-px w-12 bg-gradient-to-r from-transparent to-gold/30" />
               <div className="h-2 w-2 rotate-45 border border-gold/40" />
@@ -84,7 +84,7 @@ export function FeaturedWorlds() {
               Worlds of the <span className="text-shimmer">Òrìṣà</span>
             </h2>
           </RevealText>
-          <FadeIn delay={0.3} direction="left">
+          <FadeIn delay={0.3} direction="up">
             <p className="mt-6 mx-auto max-w-lg text-sm text-bone/50 leading-relaxed">
               Step into the chambers and meet the forces that shaped worlds,
               commanded storms, and forged civilizations.
@@ -96,7 +96,7 @@ export function FeaturedWorlds() {
         {/* Cards Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {orishaWorlds.map((world, i) => (
-            <FadeIn key={world.name} delay={i * 0.12} direction={i % 2 === 0 ? "right" : "left"}>
+            <FadeIn key={world.name} delay={i * 0.12} direction="up">
               <Link href="/orisha" className="group block">
                 <motion.div
                   whileHover={{ y: -12 }}

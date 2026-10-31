@@ -7,7 +7,7 @@ import { FadeIn } from "@/components/ui/FadeIn"
 
 export function NewsletterSection() {
   return (
-    <section className="relative overflow-hidden py-20 bg-[#0D0A05]">
+    <section className="relative overflow-hidden py-20 bg-[#0D0A05]/80">
       {/* Warm dark gold-tinted bg */}
       <div className="absolute inset-0">
         <Image
@@ -29,7 +29,7 @@ export function NewsletterSection() {
       </div>
 
       <div className="relative mx-auto max-w-2xl px-6 text-center">
-        <FadeIn direction="left">
+        <FadeIn direction="up">
           <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center">
             <div className="relative">
               <div className="h-8 w-8 rotate-45 border border-gold/30" />
@@ -51,14 +51,14 @@ export function NewsletterSection() {
           </h2>
         </RevealText>
 
-        <FadeIn delay={0.2} direction="left">
+        <FadeIn delay={0.2} direction="up">
           <p className="mt-6 text-bone/50 leading-relaxed">
             Be the first to know about new book releases, music drops,
             film announcements, and exclusive content from the House of Orisha universe.
           </p>
         </FadeIn>
 
-        <FadeIn delay={0.3} direction="right">
+        <FadeIn delay={0.3} direction="up">
           <form
             className="mt-10 flex flex-col gap-3 sm:flex-row"
             onSubmit={(e) => e.preventDefault()}
@@ -90,7 +90,7 @@ export function NewsletterSection() {
         </FadeIn>
 
         {/* Stats */}
-        <FadeIn delay={0.5} direction="right">
+        <FadeIn delay={0.5} direction="up">
           <div className="mt-16 grid grid-cols-3 gap-4">
             {[
               { number: "10+", label: "Published Works" },

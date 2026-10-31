@@ -26,7 +26,7 @@ export const books: Book[] = [
     author: "Oriyomi Ismail",
     genre: "Contemporary Mythological Fantasy",
     cover: `${R2_BASE}/images/books/house-of-orisha-book-1.jpeg`,
-    amazonLink: "https://www.amazon.com/dp/B0H7QX64H4",
+    amazonLink: "https://www.amazon.com/dp/B0GY4FLK3X",
     shortDescription:
       "Something is quietly dismantling the world, removing memory, connection, and the forces that hold reality together. The scattered Orishas must reunite, confront old fractures, and face an enemy that has already studied how each of them can be broken.",
     featured: true,
@@ -53,7 +53,7 @@ export const books: Book[] = [
     author: "Oriyomi Ismail",
     genre: "Corporate Crime Thriller",
     cover: `${R2_BASE}/images/books/blood-money.png`,
-    amazonLink: "https://www.amazon.com/dp/B0GXZDTGGS",
+    amazonLink: "https://www.amazon.com/dp/B0H7QX64H4",
     shortDescription:
       "Some fathers leave letters. Some leave money. Richard Blackwood left both — and a secret that changes everything. A gripping saga of wealth, betrayal, and an empire worth billions.",
     featured: true,
@@ -89,7 +89,7 @@ export const books: Book[] = [
     author: "Oriyomi Ismail",
     genre: "Mythological Fiction",
     cover: `${R2_BASE}/images/books/god-of-iron-book-1.jpg`,
-    amazonLink: "https://www.amazon.com/dp/B0GXQNLXLK",
+    amazonLink: "https://www.amazon.com/dp/B0GZGDYVF7",
     shortDescription:
       "Before iron became law and before wind learned its own name, two destinies were already moving toward each other. A sweeping Yoruba epic of iron and storm, creation and sacrifice.",
     featured: true,
@@ -117,6 +117,19 @@ export const books: Book[] = [
     amazonLink: "#",
     shortDescription:
       "Three families. One promise. Two cities. A generation of consequences. Loyalty lives longer than truth.",
+  },
+  {
+    slug: "house-of-orisha-book-two",
+    title: "House of Orisha",
+    subtitle: "Book Two — The Exile",
+    series: "House of Orisha Series",
+    bookNumber: "Book Two",
+    author: "Oriyomi Ismail",
+    genre: "Contemporary Mythological Fantasy",
+    cover: `${R2_BASE}/images/books/house-of-orisha-book-2.png`,
+    amazonLink: "#",
+    shortDescription:
+      "The Orishas are scattered, their bonds fractured. In exile, they must confront old wounds, forge new alliances, and face the growing darkness that threatens to consume everything they once protected.",
   },
   {
     slug: "house-of-orisha-book-three",

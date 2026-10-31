@@ -33,7 +33,7 @@ export function MusicSection() {
   const playableTracks = tracks.filter((t) => t.audioSrc)
 
   return (
-    <section className="relative py-20 overflow-hidden bg-[#0A1A10]">
+    <section className="relative py-20 overflow-hidden bg-[#0A1A10]/80">
       <audio ref={audioRef} onEnded={() => setPlaying(null)} />
 
       {/* Immersive Background Layers */}
@@ -52,7 +52,7 @@ export function MusicSection() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
         {/* Section Header */}
         <div className="mb-12 text-center">
-          <FadeIn direction="right">
+          <FadeIn direction="up">
             <div className="mx-auto mb-8 flex items-center justify-center gap-3">
               <div className="h-px w-16 bg-gradient-to-r from-transparent to-forest-light/40" />
               <div className="h-2 w-2 rotate-45 border border-gold/40" />
@@ -69,7 +69,7 @@ export function MusicSection() {
               Original <span className="text-shimmer">Music</span>
             </h2>
           </RevealText>
-          <FadeIn delay={0.3} direction="right">
+          <FadeIn delay={0.3} direction="up">
             <p className="mt-6 mx-auto max-w-lg text-sm text-bone/50 leading-relaxed">
               Every story has a sound. Original compositions inspired by the
               worlds, characters, and journeys of the House of Orisha universe.
@@ -80,7 +80,7 @@ export function MusicSection() {
 
         {/* Hero Featured Track */}
         {heroTrack && (
-          <FadeIn className="mb-14" direction="left">
+          <FadeIn className="mb-14" direction="up">
             <div
               className="group relative cursor-pointer"
               onClick={() => togglePlay(heroTrack.slug, heroTrack.audioSrc)}
@@ -169,7 +169,7 @@ export function MusicSection() {
         {/* All Tracks Grid */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {tracks.map((track, i) => (
-            <FadeIn key={track.slug} delay={i * 0.06} direction={i % 2 === 0 ? "right" : "left"}>
+            <FadeIn key={track.slug} delay={i * 0.06} direction="up">
               <motion.div
                 whileHover={{ y: -4 }}
                 className={`group relative cursor-pointer border transition-all duration-500 p-5 ${

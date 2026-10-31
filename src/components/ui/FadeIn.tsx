@@ -7,15 +7,13 @@ interface FadeInProps {
   children: ReactNode
   className?: string
   delay?: number
-  direction?: "up" | "down" | "left" | "right" | "none"
+  direction?: "up" | "down" | "none"
   duration?: number
 }
 
 const directionMap = {
   up: { y: 30 },
   down: { y: -30 },
-  left: { x: -40 },
-  right: { x: 40 },
   none: {},
 }
 

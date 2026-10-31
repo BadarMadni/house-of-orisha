@@ -14,14 +14,14 @@ export function FeaturedBooks() {
   const rest = featured.slice(1)
 
   return (
-    <section className="relative py-20 overflow-hidden bg-[#0D0D0D]">
+    <section className="relative py-20 overflow-hidden bg-[#0D0D0D]/80">
       {/* Subtle texture */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold/[0.02] via-transparent to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
         {/* Section Header */}
         <div className="mb-24 text-center">
-          <FadeIn direction="right">
+          <FadeIn direction="up">
             <div className="mx-auto mb-8 flex items-center justify-center gap-3">
               <div className="h-px w-12 bg-gradient-to-r from-transparent to-gold/30" />
               <div className="h-2 w-2 rotate-45 border border-gold/40 bg-gold/10" />
@@ -38,13 +38,13 @@ export function FeaturedBooks() {
               Featured <span className="text-shimmer">Stories</span>
             </h2>
           </RevealText>
-          <FadeIn delay={0.3} direction="right">
+          <FadeIn delay={0.3} direction="up">
             <p className="mt-6 mx-auto max-w-lg text-sm text-bone/50 leading-relaxed">
               Every story carries a world. Explore the books, myths, and histories
               of the House of Orisha universe.
             </p>
           </FadeIn>
-          <FadeIn delay={0.4} direction="right">
+          <FadeIn delay={0.4} direction="up">
             <div className="mt-10 flex items-center justify-center gap-2">
               <div className="h-px w-20 bg-gradient-to-r from-transparent to-gold/30" />
               <div className="flex gap-1">
@@ -59,7 +59,7 @@ export function FeaturedBooks() {
 
         {/* Hero Book */}
         {hero && (
-          <FadeIn className="mb-24" direction="left">
+          <FadeIn className="mb-24" direction="up">
             <Link href={`/books/${hero.slug}`} className="group block">
               <div className="relative grid gap-12 md:grid-cols-[auto_1fr] md:items-center lg:gap-20">
                 <motion.div
@@ -127,7 +127,7 @@ export function FeaturedBooks() {
         {/* Remaining Books - Consistent Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {rest.map((book, i) => (
-            <FadeIn key={book.slug} delay={i * 0.12} direction={i % 2 === 0 ? "left" : "right"}>
+            <FadeIn key={book.slug} delay={i * 0.12} direction="up">
               <Link href={`/books/${book.slug}`} className="group block h-full">
                 <motion.div
                   whileHover={{ y: -8 }}

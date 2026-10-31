@@ -50,7 +50,7 @@ export default function FilmsPage() {
         image="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/scenes/village-burning.png"
       />
 
-      <section className="bg-obsidian py-24">
+      <section className="bg-obsidian/80 py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-12 space-y-32">
           {films.map((film, i) => (
             <div key={film.title} className="grid gap-12 lg:grid-cols-2 lg:items-center">

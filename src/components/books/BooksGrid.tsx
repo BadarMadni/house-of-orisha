@@ -21,7 +21,7 @@ export function BooksGrid() {
   const remaining = books.filter((b) => !b.featured)
 
   return (
-    <section ref={sectionRef} className="relative py-20 overflow-hidden bg-[#0D0D0D]">
+    <section ref={sectionRef} className="relative py-20 overflow-hidden bg-[#0D0D0D]/80">
       {/* Parallax tribal bg */}
       <motion.div className="absolute -inset-[20%]" style={{ y: bgY }}>
         <Image
