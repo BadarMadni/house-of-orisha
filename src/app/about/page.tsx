@@ -14,7 +14,7 @@ export default function AboutPage() {
         image="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/author/houston-sunset.png"
       />
 
-      <section className="bg-obsidian py-24">
+      <section className="bg-obsidian/80 py-24">
         <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="grid gap-16 md:grid-cols-[1fr_1.5fr] items-start">
             <FadeIn direction="up">

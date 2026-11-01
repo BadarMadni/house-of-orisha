@@ -1,47 +1,10 @@
 "use client"
 
-import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
-import { useRef, useEffect, useState, useCallback } from "react"
+import { useRef, useEffect, useState } from "react"
 import { MagneticButton } from "@/components/ui/MagneticButton"
-
-// Floating ember particle
-function Ember({ delay, duration, left, size }: { delay: number; duration: number; left: string; size: number }) {
-  return (
-    <motion.div
-      className="absolute rounded-full"
-      style={{
-        left,
-        bottom: "-5%",
-        width: size,
-        height: size,
-        background: `radial-gradient(circle, rgba(212,175,55,0.9) 0%, rgba(212,175,55,0.3) 50%, transparent 70%)`,
-        boxShadow: `0 0 ${size * 2}px rgba(212,175,55,0.4)`,
-      }}
-      animate={{
-        y: [0, -window?.innerHeight * 1.2 || -1200],
-        x: [0, Math.random() * 80 - 40, Math.random() * 60 - 30],
-        opacity: [0, 1, 1, 0],
-        scale: [0.5, 1, 0.8, 0.3],
-      }}
-      transition={{
-        duration,
-        delay,
-        repeat: Infinity,
-        ease: "easeOut",
-      }}
-    />
-  )
-}
-
-// Generate ember configs once
-const EMBERS = Array.from({ length: 28 }, (_, i) => ({
-  id: i,
-  delay: Math.random() * 8,
-  duration: 6 + Math.random() * 6,
-  left: `${Math.random() * 100}%`,
-  size: 2 + Math.random() * 4,
-}))
+import { EmberParticles } from "@/components/home/EmberParticles"
 
 export function HeroSection() {
   const containerRef = useRef<HTMLElement>(null)
@@ -58,7 +21,6 @@ export function HeroSection() {
   const contentOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
   const contentY = useTransform(scrollYProgress, [0, 0.5], [0, -80])
 
-  // Staggered letter animation for "ORISHA"
   const orishaLetters = "ORISHA".split("")
 
   return (
@@ -66,7 +28,7 @@ export function HeroSection() {
       ref={containerRef}
       className="relative flex min-h-screen items-center overflow-hidden pt-24"
     >
-      {/* Parallax Background - NEW IMAGE */}
+      {/* Parallax Background */}
       <motion.div className="absolute inset-0" style={{ y: imageY, scale: imageScale }}>
         <Image
           src="https://pub-af61dd960fbb4f08be7eaa4526d2b2ac.r2.dev/images/characters/sango-warrior-rain.png"
@@ -79,46 +41,21 @@ export function HeroSection() {
         />
       </motion.div>
 
-      {/* Film grain overlay */}
-      <div
-        className="pointer-events-none absolute inset-0 z-[2] opacity-[0.035] mix-blend-overlay"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-        }}
-      />
-
       {/* Cinematic Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-obsidian/30 to-obsidian" />
       <div className="absolute inset-0 bg-gradient-to-r from-obsidian/95 via-obsidian/60 to-transparent lg:from-obsidian/90 lg:via-obsidian/35" />
-      {/* Vignette edges */}
       <div className="absolute inset-0" style={{ boxShadow: "inset 0 0 200px 60px rgba(0,0,0,0.6)" }} />
-      {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-56 bg-gradient-to-t from-obsidian via-obsidian/80 to-transparent" />
 
-      {/* Ambient golden glow behind title area */}
-      <motion.div
-        animate={{ opacity: [0.15, 0.3, 0.15] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute left-[10%] top-[35%] h-[300px] w-[400px] rounded-full blur-[120px]"
-        style={{ background: "radial-gradient(circle, rgba(212,175,55,0.25) 0%, transparent 70%)" }}
-      />
-
       {/* Floating Embers */}
-      {mounted && (
-        <div className="pointer-events-none absolute inset-0 z-[3] overflow-hidden">
-          {EMBERS.map((ember) => (
-            <Ember key={ember.id} {...ember} />
-          ))}
-        </div>
-      )}
+      {mounted && <EmberParticles />}
 
-      {/* Main Content - Left aligned */}
+      {/* Main Content */}
       <motion.div
         style={{ opacity: contentOpacity, y: contentY }}
         className="relative z-10 mx-auto w-full max-w-7xl px-6 lg:px-12"
       >
         <div className="max-w-2xl">
-          {/* Decorative accent - animated line with glow */}
           <motion.div
             initial={{ width: 0, opacity: 0 }}
             animate={{ width: 80, opacity: 1 }}
@@ -146,7 +83,7 @@ export function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Title - ORISHA with staggered letters */}
+          {/* Title - ORISHA */}
           <div className="overflow-hidden">
             <motion.div
               initial={{ y: "120%" }}
@@ -172,7 +109,7 @@ export function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Divider with diamond and glow */}
+          {/* Divider */}
           <div className="relative my-8">
             <motion.div
               initial={{ width: 0 }}
@@ -214,12 +151,12 @@ export function HeroSection() {
         </div>
       </motion.div>
 
-      {/* Scroll Indicator - Bottom center */}
+      {/* Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 3, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-10"
+        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-3"
       >
         <motion.p
           animate={{ opacity: [0.2, 0.5, 0.2] }}
