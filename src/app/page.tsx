@@ -5,6 +5,7 @@ import { FeaturedWorlds } from "@/components/home/FeaturedWorlds"
 import { FeaturedBooks } from "@/components/home/FeaturedBooks"
 import { FilmSection } from "@/components/home/FilmSection"
 import { MusicSection } from "@/components/home/MusicSection"
+import { HoorRadioSection } from "@/components/home/HoorRadioSection"
 import { NewsletterSection } from "@/components/home/NewsletterSection"
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <FeaturedBooks />
       <FilmSection />
       <MusicSection />
+      <HoorRadioSection />
       <NewsletterSection />
     </>
   )
