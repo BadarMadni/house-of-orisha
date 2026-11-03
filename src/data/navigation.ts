@@ -4,6 +4,7 @@ export const navLinks = [
   { href: "/films", label: "The Screen" },
   { href: "/orisha", label: "The Chambers" },
   { href: "/music", label: "The Sound" },
+  { href: "/radio", label: "HOOR Radio" },
   { href: "/about", label: "The Author" },
   { href: "/licensing", label: "Partnerships" },
   { href: "/contact", label: "Contact" },
