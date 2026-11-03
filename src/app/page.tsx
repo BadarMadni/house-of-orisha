@@ -14,9 +14,9 @@ export default function Home() {
       <HeroSection />
       <FeaturedWorlds />
       <FeaturedBooks />
+      <HoorRadioSection />
       <FilmSection />
       <MusicSection />
-      <HoorRadioSection />
       <NewsletterSection />
     </>
   )
